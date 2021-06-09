@@ -2,7 +2,7 @@ import logo from './logo.svg';
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Container, Row, Col, Navbar, Nav } from 'react-bootstrap';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { HashRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Home } from "./home.jsx"
 import { Resume } from "./resume.jsx"
 
@@ -10,7 +10,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div>
         <nav>
           <Navbar bg="dark" variant="dark">
@@ -19,9 +19,9 @@ function App() {
               Home
             </Navbar.Brand>
             <Nav>
-              <Nav.Link href="/about">About Me</Nav.Link>
-              <Nav.Link href="/resume">Resume</Nav.Link>
-              <Nav.Link href="/projects" disabled>Projects</Nav.Link>
+              <Nav.Link href="#/about">About Me</Nav.Link>
+              <Nav.Link href="#/resume">Resume</Nav.Link>
+              <Nav.Link href="#/projects" disabled>Projects</Nav.Link>
             </Nav>
           </Navbar>
         </nav>
@@ -29,15 +29,9 @@ function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-          <Route path="/resume">
-            <Resume />
-          </Route>
+          <Route path="/about" component={About} />
+          <Route path="/" component={Home} />
+          <Route path="/resume" component={Resume} />
         </Switch>
       </div>
     </Router>

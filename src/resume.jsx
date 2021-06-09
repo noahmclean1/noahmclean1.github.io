@@ -3,7 +3,9 @@ import { Container, Row, Col, Image } from 'react-bootstrap';
 
 
 export function Resume() {
+    return (
 	<Container>
-        
+
     </Container>
+    )
 }
