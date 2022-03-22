@@ -1,0 +1,41 @@
+[
+    {
+        "Title":"Software Engineer",
+        "Company":"Shelf Engine",
+        "StartDate":"Sept 2021",
+        "EndDate":"Present",
+        "ImageName":"shelf",
+        "Description": [
+        ]
+    },
+    {
+        "Title":"Data Analytics Engineer",
+        "Company":"Allstate",
+        "StartDate":"July 2020",
+        "EndDate":"Sept 2021",
+        "ImageName":"allstate",
+        "Description": [
+            "Member of the Feature Library team, whose goal is standardizing and democratizing data transformation across the enterprise",
+            "Designed a JSON preprocessor to simplify user operation and optimize Feature Library architecture",
+            "Expanded features and usability of the preprocessor through mentoring an intern and designing their project",
+            "Implemented the preprocessor in Java, created an API endpoint with documentation using Swagger",
+            "Constructed a Java UDF of the preprocessor for use in PySpark",
+            "Created a dashboard to track ML labeling progress on a variety of projects throughout the enterprise",
+            "Connected Scality buckets to Dremio and PowerBI to form a data pipeline for the dashboard",
+            "Aggregated data from image and text ML labels through 2 APIs in BASH and Python (Labelbox & HeartEx)"
+
+        ]
+    },
+    {
+        "Title":"Research Assistant",
+        "Company":"Becker Friedman Institute",
+        "StartDate":"June 2019",
+        "EndDate":"June 2020",
+        "ImageName":"bfi",
+        "Description": [
+            "Developed and documented a complex ML pipeline for finding semantic relationships in corpora, and designed BASH and Python tools to automate and streamline NLP processes",
+            "Analyzed, implemented, and compared different Gensim neural networks to create word embeddings",
+            "Performed various forms of word embedding analysis to discover clear forms of written bias"
+        ]
+    }
+]
